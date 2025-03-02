@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBFF6FD2D73C0F800DC0F9B /* artists.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACBFF6FC2D73C0F800DC0F9B /* artists.xml */; };
+		D268FEBC2D6C894A00C23F94 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */; };
+		D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAD2D6C894A00C23F94 /* TopArtists.swift */; };
+		D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */; };
+		D268FEBF2D6C894A00C23F94 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAF2D6C894A00C23F94 /* Artist.swift */; };
+		D268FEC02D6C894A00C23F94 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */; };
+		D268FEC22D6C894A00C23F94 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEB32D6C894A00C23F94 /* WebViewController.swift */; };
+		D268FECC2D6C8C4200C23F94 /* XMLArtistsParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FECB2D6C8C4200C23F94 /* XMLArtistsParsing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ACBFF6FC2D73C0F800DC0F9B /* artists.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = artists.xml; sourceTree = "<group>"; };
+		D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People Multi Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D268FEAD2D6C894A00C23F94 /* TopArtists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtists.swift; sourceTree = "<group>"; };
+		D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		D268FEAF2D6C894A00C23F94 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		D268FEB32D6C894A00C23F94 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D268FECB2D6C8C4200C23F94 /* XMLArtistsParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLArtistsParsing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "People Multi Screen" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				sabin.jpg,
+			);
+			target = D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ACBFF7322D74C15500DC0F9B /* ArtistImages */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ArtistImages;
+			sourceTree = "<group>";
+		};
+		D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "People Multi Screen" target */,
+			);
+			path = "People Multi Screen";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D201AFE92D5B5CF0000FFA38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D201AFE32D5B5CF0000FFA38 = {
+			isa = PBXGroup;
+			children = (
+				ACBFF7322D74C15500DC0F9B /* ArtistImages */,
+				D268FEC42D6C8A0700C23F94 /* Models */,
+				D268FEC32D6C89E500C23F94 /* Controllers */,
+				D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */,
+				D201AFED2D5B5CF0000FFA38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D201AFED2D5B5CF0000FFA38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D268FEC32D6C89E500C23F94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */,
+				D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */,
+				D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */,
+				D268FEB32D6C894A00C23F94 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D268FEC42D6C8A0700C23F94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D268FEAD2D6C894A00C23F94 /* TopArtists.swift */,
+				D268FEAF2D6C894A00C23F94 /* Artist.swift */,
+				ACBFF6FC2D73C0F800DC0F9B /* artists.xml */,
+				D268FECB2D6C8C4200C23F94 /* XMLArtistsParsing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "People Multi Screen" */;
+			buildPhases = (
+				D201AFE82D5B5CF0000FFA38 /* Sources */,
+				D201AFE92D5B5CF0000FFA38 /* Frameworks */,
+				D201AFEA2D5B5CF0000FFA38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ACBFF7322D74C15500DC0F9B /* ArtistImages */,
+				D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */,
+			);
+			name = "People Multi Screen";
+			packageProductDependencies = (
+			);
+			productName = "People Multi Screen";
+			productReference = D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D201AFE42D5B5CF0000FFA38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D201AFEB2D5B5CF0000FFA38 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "People Multi Screen" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D201AFE32D5B5CF0000FFA38;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D201AFED2D5B5CF0000FFA38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D201AFEA2D5B5CF0000FFA38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBFF6FD2D73C0F800DC0F9B /* artists.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D201AFE82D5B5CF0000FFA38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D268FEBC2D6C894A00C23F94 /* DetailsViewController.swift in Sources */,
+				D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */,
+				D268FECC2D6C8C4200C23F94 /* XMLArtistsParsing.swift in Sources */,
+				D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */,
+				D268FEBF2D6C894A00C23F94 /* Artist.swift in Sources */,
+				D268FEC02D6C894A00C23F94 /* ArtistViewController.swift in Sources */,
+				D268FEC22D6C894A00C23F94 /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D201B0002D5B5CF1000FFA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "People Multi Screen/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UCC.People-Multi-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D201B0012D5B5CF1000FFA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "People Multi Screen/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UCC.People-Multi-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D201B0022D5B5CF1000FFA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D201B0032D5B5CF1000FFA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "People Multi Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D201B0022D5B5CF1000FFA38 /* Debug */,
+				D201B0032D5B5CF1000FFA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "People Multi Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D201B0002D5B5CF1000FFA38 /* Debug */,
+				D201B0012D5B5CF1000FFA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D201AFE42D5B5CF0000FFA38 /* Project object */;
+}

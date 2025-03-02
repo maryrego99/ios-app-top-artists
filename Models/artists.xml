@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artists>
+    <artist>
+        <name>Ed Sheeran</name>
+        <genre>Pop, Singer-Songwriter</genre>
+        <popularSongs>Shape of You, Perfect, Bad Habits</popularSongs>
+        <website>https://www.ucc.ie</website>
+        <image>EdSheeran.jpg</image>
+    </artist>
+    <artist>
+        <name>Luke Combs</name>
+        <genre>Country</genre>
+        <popularSongs>Beautiful Crazy, Hurricane, When It Rains It Pours</popularSongs>
+        <website>https://www.lukecombs.com</website>
+        <image>LukeCombs.jpg</image>
+    </artist>
+    <artist>
+        <name>George Ezra</name>
+        <genre>Folk Pop</genre>
+        <popularSongs>Budapest, Shotgun, Paradise</popularSongs>
+        <website>https://www.georgeezra.com</website>
+        <image>GeorgeEzra.jpg</image>
+    </artist>
+    <artist>
+        <name>Meghan Trainor</name>
+        <genre>Pop</genre>
+        <popularSongs>All About That Bass, Made You Look, Me Too</popularSongs>
+        <website>https://www.meghan-trainor.com</website>
+        <image>MeghanTrainor.jpg</image>
+    </artist>
+    <artist>
+        <name>Benson Boone</name>
+        <genre>Pop</genre>
+        <popularSongs>In The Stars, Ghost Town</popularSongs>
+        <website>https://www.bensonboone.com</website>
+        <image>BensonBoone.jpg</image>
+    </artist>
+    <artist>
+        <name>Taylor Swift</name>
+        <genre>Pop, Country, Indie</genre>
+        <popularSongs>Love Story, Blank Space, Anti-Hero</popularSongs>
+        <website>https://www.taylorswift.com</website>
+        <image>TaylorSwift.jpg</image>
+    </artist>
+    <artist>
+        <name>Lady A</name>
+        <genre>Country</genre>
+        <popularSongs>Need You Now, Just a Kiss, What If I Never Get Over You</popularSongs>
+        <website>https://www.ladyamusic.com</website>
+        <image>LadyA.jpg</image>
+    </artist>
+    <artist>
+        <name>Maren Morris</name>
+        <genre>Country, Pop</genre>
+        <popularSongs>The Bones, My Church, I Could Use a Love Song</popularSongs>
+        <website>https://www.marenmorris.com</website>
+        <image>MarenMorris.jpg</image>
+    </artist>
+    <artist>
+        <name>Noah Kahan</name>
+        <genre>Folk Pop</genre>
+        <popularSongs>Stick Season, False Confidence, Northern Attitude</popularSongs>
+        <website>https://www.noahkahan.com</website>
+        <image>NoahKahan.jpg</image>
+    </artist>
+    <artist>
+        <name>Dean Lewis</name>
+        <genre>Pop, Singer-Songwriter</genre>
+        <popularSongs>Be Alright, Waves, How Do I Say Goodbye</popularSongs>
+        <website>https://www.deanlewismusic.com</website>
+        <image>DeanLewis.jpg</image>
+    </artist>
+    <artist>
+        <name>Sasha Sloan</name>
+        <genre>Indie Pop</genre>
+        <popularSongs>Dancing With Your Ghost, Older, Smiling When I Die</popularSongs>
+        <website>https://www.sadgirlsloan.com</website>
+        <image>SashaSloan.jpg</image>
+    </artist>
+    <artist>
+        <name>James Bay</name>
+        <genre>Indie Rock, Pop</genre>
+        <popularSongs>Hold Back The River, Let It Go, Wild Love</popularSongs>
+        <website>https://www.jamesbay.com</website>
+        <image>JamesBay.jpg</image>
+    </artist>
+    <artist>
+        <name>Calum Scott</name>
+        <genre>Pop</genre>
+        <popularSongs>You Are The Reason, Dancing On My Own, Biblical</popularSongs>
+        <website>https://www.calumscott.com</website>
+        <image>CalumScott.jpg</image>
+    </artist>
+    <artist>
+        <name>Miley Cyrus</name>
+        <genre>Pop, Rock</genre>
+        <popularSongs>Flowers, Wrecking Ball, Malibu</popularSongs>
+        <website>https://www.mileycyrus.com</website>
+        <image>MileyCyrus.jpg</image>
+    </artist>
+    <artist>
+        <name>James Blunt</name>
+        <genre>Pop Rock, Folk Rock</genre>
+        <popularSongs>You’re Beautiful, Goodbye My Lover, Monsters</popularSongs>
+        <website>https://www.jamesblunt.com</website>
+        <image>JamesBlunt.jpg</image>
+    </artist>
+    <artist>
+        <name>Hozier</name>
+        <genre>Blues, Indie Rock</genre>
+        <popularSongs>Take Me to Church, Cherry Wine, Work Song</popularSongs>
+        <website>https://www.hozier.com</website>
+        <image>Hozier.jpg</image>
+    </artist>
+</artists>
