@@ -10,7 +10,7 @@ class PeopleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "TopArtists"
+//        title = "TopArtists"
         
         // init model data
         artistsData = TopArtists(xmlFile: "artists.xml")

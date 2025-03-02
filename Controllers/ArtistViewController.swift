@@ -23,7 +23,7 @@ class ArtistViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Artist"
+//        title = "Artist"
 
         
         
