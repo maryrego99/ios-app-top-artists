@@ -12,10 +12,12 @@ class ArtistViewController: UIViewController {
     //MARK: - Outlets
     
     @IBOutlet weak var personImageView: UIImageView!
+    @IBOutlet weak var artistImageContainerView: UIView!
     @IBOutlet weak var personLabel: UILabel!
     
     @IBAction func moreInfoAction(_ sender: Any) {
     }
+    
     
     // model data
     var personData : Artist!
@@ -24,12 +26,24 @@ class ArtistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        title = "Artist"
-
-        
         
         // populate outlets with model data
         personImageView.image = UIImage(named: personData.image)
         personLabel.text = personData.name
+        
+        personImageView.layer.cornerRadius = 16
+        personImageView.layer.masksToBounds = true  // Keeps the image rounded
+
+        print("Artist Image Container Frame: \(artistImageContainerView.frame)")
+        
+        // Apply shadow to the UIView container instead
+        artistImageContainerView.layer.shadowColor = UIColor.init(red: 0.290, green: 0.290, blue: 0.447, alpha: 1.0).cgColor
+//        artistImageContainerView.layer.shadowColor = UIColor.init(red: 74.0, green: 74.0, blue: 114.0, alpha: 0.0).cgColor
+        artistImageContainerView.layer.shadowOpacity = 0.7
+        artistImageContainerView.layer.shadowRadius = 15
+        artistImageContainerView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        artistImageContainerView.layer.masksToBounds = false  // Ensures shadow is visible outside
+        
     }
     
 
