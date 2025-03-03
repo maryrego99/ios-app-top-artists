@@ -38,7 +38,7 @@ class PeopleTableViewController: UITableViewController {
         // Configure the cell...
         cell.textLabel?.text = personData.name
         cell.detailTextLabel?.text = personData.genre
-        let imageName = "ArtistImages/\(personData.image)"
+        let imageName = (personData.image)
         if let image = UIImage(named: imageName) {
             cell.imageView?.image = image
         } else {
