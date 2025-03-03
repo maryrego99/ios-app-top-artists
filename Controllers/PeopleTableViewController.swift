@@ -30,17 +30,17 @@ class PeopleTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArtistTableViewCell
         
         // get the cell data from peopleData
         let personData = artistsData.artist(index: indexPath.row)
 
         // Configure the cell...
-        cell.textLabel?.text = personData.name
-        cell.detailTextLabel?.text = personData.genre
+        cell.nameLabel.text = personData.name
+        cell.genreLabel.text = personData.genre
         let imageName = (personData.image)
         if let image = UIImage(named: imageName) {
-            cell.imageView?.image = image
+            cell.artistImageView.image = image
         } else {
             print("Image not found: \(imageName)")
         }

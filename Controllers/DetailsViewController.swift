@@ -15,6 +15,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var popularSongs: UILabel!
     @IBOutlet weak var urlLabel: UILabel!
     
+    @IBOutlet weak var webInfoButton: UIButton!
     @IBAction func webInfoAction(_ sender: Any) {
     }
     
@@ -32,6 +33,22 @@ class DetailsViewController: UIViewController {
         genreLabel.text = personData.genre
         popularSongs.text = personData.popularSongs
         urlLabel.text   = personData.url
+        
+        webInfoButton.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
+        webInfoButton.addTarget(self, action: #selector(buttonReleased), for: .touchUpInside)
+        
+    }
+    
+    @objc func buttonPressed() {
+        UIView.animate(withDuration: 0.1) {
+            self.webInfoButton.alpha = 0.7
+        }
+    }
+
+    @objc func buttonReleased() {
+        UIView.animate(withDuration: 0.1) {
+            self.webInfoButton.alpha = 1.0
+        }
     }
     
 
