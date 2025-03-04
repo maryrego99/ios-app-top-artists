@@ -34,4 +34,7 @@ class TopArtists{
     //methods
     func count()->Int{return self.topArtists.count}
     func artist(index:Int)->Artist{return self.topArtists[index]}
+    func allArtists() -> [Artist] {
+        return self.topArtists
+    }
 }

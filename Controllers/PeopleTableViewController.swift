@@ -6,7 +6,11 @@ class PeopleTableViewController: UITableViewController {
     
     // model data
     var artistsData : TopArtists!
+    var filteredArtists: [Artist] = []
+    var isSearching = false
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -14,6 +18,10 @@ class PeopleTableViewController: UITableViewController {
         
         // init model data
         artistsData = TopArtists(xmlFile: "artists.xml")
+        searchBar.delegate = self
+        if let textField = searchBar.value(forKey: "searchField") as? UITextField {
+            textField.textColor = UIColor.init(red: 0.118, green: 0.118, blue: 0.180, alpha: 1.0)
+        }
     }
 
     // MARK: - Table view data source
@@ -25,7 +33,7 @@ class PeopleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return artistsData.count()
+        return isSearching ? filteredArtists.count : artistsData.count()
     }
 
     
@@ -33,7 +41,7 @@ class PeopleTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArtistTableViewCell
         
         // get the cell data from peopleData
-        let personData = artistsData.artist(index: indexPath.row)
+        let personData = isSearching ? filteredArtists[indexPath.row] : artistsData.artist(index: indexPath.row)
 
         // Configure the cell...
         cell.nameLabel.text = personData.name
@@ -47,42 +55,6 @@ class PeopleTableViewController: UITableViewController {
 
         return cell
     }
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation
@@ -102,6 +74,26 @@ class PeopleTableViewController: UITableViewController {
             destinationController.personData = personData
         }
     }
+    
    
 
+}
+
+extension PeopleTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            isSearching = false
+            filteredArtists = []
+        } else {
+            isSearching = true
+            filteredArtists = artistsData.allArtists().filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        }
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        isSearching = false
+        tableView.reloadData()
+    }
 }
