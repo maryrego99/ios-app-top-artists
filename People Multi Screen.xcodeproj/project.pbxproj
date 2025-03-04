@@ -36,7 +36,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				sabin.jpg,
 			);
 			target = D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */;
 		};
