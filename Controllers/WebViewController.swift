@@ -22,14 +22,10 @@ class WebViewController: UIViewController {
         
 //        title = "web"
 
-        let urlData = URL(string: "https://open.spotify.com/embed/track/1daDRI9ahBonbWD8YcxOIB?si=MnjACuQ1TFS8--UfZEDx3Q") ?? URL(string: "https://www.google.com/")
+        let urlData = URL(string: urlData) ?? URL(string: "https://www.google.com/")
+//        let urlData = URL(string: "https://open.spotify.com/embed/track/1daDRI9ahBonbWD8YcxOIB?si=MnjACuQ1TFS8--UfZEDx3Q") ?? URL(string: "https://www.google.com/")
                 
         let webURLRequest = URLRequest(url: urlData!)
-        
-//        let urlString = "https://open.spotify.com/embed/track/1daDRI9ahBonbWD8YcxOIB?si=MnjACuQ1TFS8--UfZEDx3Q"
-//        let webView = WKWebView(frame: view.bounds)
-//        webView.load(URLRequest(url: URL(string: urlString)!))
-//        view.addSubview(webView)
             
         personWebView.load(webURLRequest)
     }

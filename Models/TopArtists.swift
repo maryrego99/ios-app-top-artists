@@ -10,16 +10,7 @@ class TopArtists{
     init(topArtists: [Artist]) {
         self.topArtists = topArtists
     }
-    
-    init(){
-        self.topArtists =
-        [
-            Artist(name: "Sabin Tabirca", genre: "12345678", popularSongs: "sabin@ucc.ie", url: "https://www.ucc.ie", image: "sabin.jpg"),
-            Artist(name: "Sabina Tabirca", genre: "12345678", popularSongs: "sabin@ucc.ie", url: "https://www.ucc.ie", image: "sabin.jpg"),
-            Artist(name: "Saby Tabirca", genre: "12345678", popularSongs: "sabin@ucc.ie", url: "https://www.ucc.ie", image: "sabin.jpg"),
-            Artist(name: "Sabine Tabirca", genre: "12345678", popularSongs: "sabin@ucc.ie", url: "https://www.ucc.ie", image: "sabin.jpg")
-        ]
-    }
+
     
     init(xmlFile:String){
         // make topArtistsParser and parsing

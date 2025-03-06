@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ArtistViewController: UIViewController {
     
@@ -14,6 +15,7 @@ class ArtistViewController: UIViewController {
     @IBOutlet weak var personImageView: UIImageView!
     @IBOutlet weak var artistImageContainerView: UIView!
     @IBOutlet weak var personLabel: UILabel!
+    @IBOutlet weak var songWebView: WKWebView!
     
     @IBAction func moreInfoAction(_ sender: Any) {
     }
@@ -21,6 +23,7 @@ class ArtistViewController: UIViewController {
     
     // model data
     var personData : Artist!
+    var urlData : String!
     
 
     override func viewDidLoad() {
@@ -43,6 +46,13 @@ class ArtistViewController: UIViewController {
         artistImageContainerView.layer.shadowRadius = 15
         artistImageContainerView.layer.shadowOffset = CGSize(width: 0, height: 4)
         artistImageContainerView.layer.masksToBounds = false  // Ensures shadow is visible outside
+        
+        
+        let urlData = URL(string: personData.songUrl) ?? URL(string: "https://www.google.com/")
+                
+        let webURLRequest = URLRequest(url: urlData!)
+            
+        songWebView.load(webURLRequest)
         
     }
     

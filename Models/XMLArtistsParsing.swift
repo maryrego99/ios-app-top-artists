@@ -11,7 +11,7 @@ class XMLArtistsParsing:NSObject, XMLParserDelegate{
     //MARK: - vars to work parsing
     
     // tmp vars to store person data
-    var aName, aGenre, aPopularSongs, aUrl, aImage : String!
+    var aName, aGenre, aPopularSongs, aUrl, aImage, aSongUrl : String!
     
     // spy vars to work in the delegate methods
     var passElement : Int = -1
@@ -23,7 +23,7 @@ class XMLArtistsParsing:NSObject, XMLParserDelegate{
     
     // xml parsing elements
     var parser : XMLParser!
-    var tags = ["name", "genre", "popularSongs", "website", "image"]
+    var tags = ["name", "genre", "popularSongs", "website", "image", "songUrl"]
     
     //MARK: - parsing delegate methods
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -43,6 +43,7 @@ class XMLArtistsParsing:NSObject, XMLParserDelegate{
             case 2 : aPopularSongs = string
             case 3 : aUrl = string
             case 4 : aImage = string
+            case 5 : aSongUrl = string
             default:
                 break
             }
@@ -59,7 +60,7 @@ class XMLArtistsParsing:NSObject, XMLParserDelegate{
         // check if </person>
         if elementName == "artist"{
             // create personData and append it to peopleData
-            personData = Artist(name: aName, genre: aGenre, popularSongs: aPopularSongs, url: aUrl, image: aImage)
+            personData = Artist(name: aName, genre: aGenre, popularSongs: aPopularSongs, url: aUrl, image: aImage, songUrl: aSongUrl)
             topArtistsData.append(personData)
         }
         

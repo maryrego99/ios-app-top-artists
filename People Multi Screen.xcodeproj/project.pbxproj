@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ACBFF6FD2D73C0F800DC0F9B /* artists.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACBFF6FC2D73C0F800DC0F9B /* artists.xml */; };
 		ACC5BFC62D7634D60066F72C /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5BFC52D7634D60066F72C /* ArtistTableViewCell.swift */; };
+		ACC5BFC92D77549A0066F72C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5BFC82D7753300066F72C /* StorageManager.swift */; };
 		D268FEBC2D6C894A00C23F94 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */; };
 		D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAD2D6C894A00C23F94 /* TopArtists.swift */; };
 		D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		ACBFF6FC2D73C0F800DC0F9B /* artists.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = artists.xml; sourceTree = "<group>"; };
 		ACC5BFC52D7634D60066F72C /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		ACC5BFC82D7753300066F72C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People Multi Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D268FEAD2D6C894A00C23F94 /* TopArtists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtists.swift; sourceTree = "<group>"; };
@@ -63,11 +65,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACC5BFC72D7753050066F72C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5BFC82D7753300066F72C /* StorageManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D201AFE32D5B5CF0000FFA38 = {
 			isa = PBXGroup;
 			children = (
 				D268FEC42D6C8A0700C23F94 /* Models */,
 				D268FEC32D6C89E500C23F94 /* Controllers */,
+				ACC5BFC72D7753050066F72C /* Utilities */,
 				D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */,
 				D201AFED2D5B5CF0000FFA38 /* Products */,
 			);
@@ -181,6 +192,7 @@
 			files = (
 				D268FEBC2D6C894A00C23F94 /* DetailsViewController.swift in Sources */,
 				D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */,
+				ACC5BFC92D77549A0066F72C /* StorageManager.swift in Sources */,
 				D268FECC2D6C8C4200C23F94 /* XMLArtistsParsing.swift in Sources */,
 				D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */,
 				D268FEBF2D6C894A00C23F94 /* Artist.swift in Sources */,

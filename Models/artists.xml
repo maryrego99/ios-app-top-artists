@@ -6,6 +6,7 @@
         <popularSongs>Shape of You, Perfect, Bad Habits</popularSongs>
         <website>https://www.edsheeran.com</website>
         <image>EdSheeran.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/1HNkqx9Ahdgi1Ixy2xkKkL</songUrl>
     </artist>
     <artist>
         <name>Luke Combs</name>
@@ -13,6 +14,7 @@
         <popularSongs>Beautiful Crazy, Hurricane, When It Rains It Pours</popularSongs>
         <website>https://www.lukecombs.com</website>
         <image>LukeCombs.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/2rxQMGVafnNaRaXlRMWPde?si=26dff8f0cad545a3</songUrl>
     </artist>
     <artist>
         <name>George Ezra</name>
@@ -20,6 +22,7 @@
         <popularSongs>Budapest, Shotgun, Paradise</popularSongs>
         <website>https://www.georgeezra.com</website>
         <image>GeorgeEzra.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/4ofwffwvvnbSkrMSCKQDaC?si=515dd5e3ec274ddc</songUrl>
     </artist>
     <artist>
         <name>Meghan Trainor</name>
@@ -27,6 +30,7 @@
         <popularSongs>All About That Bass, Made You Look, Me Too</popularSongs>
         <website>https://www.meghan-trainor.com</website>
         <image>MeghanTrainor.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/2YlZnw2ikdb837oKMKjBkW</songUrl>
     </artist>
     <artist>
         <name>Benson Boone</name>
@@ -34,6 +38,7 @@
         <popularSongs>In The Stars, Ghost Town</popularSongs>
         <website>https://www.bensonboone.com</website>
         <image>BensonBoone.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/6tNQ70jh4OwmPGpYy6R2o9?si=5dc031db8f5b40e6</songUrl>
     </artist>
     <artist>
         <name>Taylor Swift</name>
@@ -41,6 +46,7 @@
         <popularSongs>Love Story, Blank Space, Anti-Hero</popularSongs>
         <website>https://www.taylorswift.com</website>
         <image>TaylorSwift.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/3nsfB1vus2qaloUdcBZvDu?si=617fc478914a4fcf</songUrl>
     </artist>
     <artist>
         <name>Lady A</name>
@@ -48,6 +54,7 @@
         <popularSongs>Need You Now, Just a Kiss, What If I Never Get Over You</popularSongs>
         <website>https://www.ladyamusic.com</website>
         <image>LadyA.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/7GAaTpSoTWUTbP2Yxlt4Hd?si=da7516f30e494350</songUrl>
     </artist>
     <artist>
         <name>Maren Morris</name>
@@ -55,6 +62,7 @@
         <popularSongs>The Bones, My Church, I Could Use a Love Song</popularSongs>
         <website>https://www.marenmorris.com</website>
         <image>MarenMorris.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/1LM5zQv5pBKPyO7rm7Uz6U?si=7e02e14a38f84ac5</songUrl>
     </artist>
     <artist>
         <name>Noah Kahan</name>
@@ -62,12 +70,14 @@
         <popularSongs>Stick Season, False Confidence, Northern Attitude</popularSongs>
         <website>https://www.noahkahan.com</website>
         <image>NoahKahan.jpg</image>
-    </artist>
+        <songUrl>https://open.spotify.com/embed/track/0mflMxspEfB0VbI1kyLiAv?si=14bf7f1edec34f1c</songUrl>
+        </artist>
     <artist>
         <name>Dean Lewis</name>
         <genre>Pop, Singer-Songwriter</genre>
         <popularSongs>Be Alright, Waves, How Do I Say Goodbye</popularSongs>
         <website>https://www.deanlewismusic.com</website>
+        <songUrl>https://open.spotify.com/embed/track/3EPXxR3ImUwfayaurPi3cm?si=ba925e0fa68649b2</songUrl>
         <image>DeanLewis.jpg</image>
     </artist>
     <artist>
@@ -76,6 +86,7 @@
         <popularSongs>Dancing With Your Ghost, Older, Smiling When I Die</popularSongs>
         <website>https://www.sadgirlsloan.com</website>
         <image>SashaSloan.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/52iLDrSoRtf9lcgFuLVfqE?si=632b8961b169449b</songUrl>
     </artist>
     <artist>
         <name>James Bay</name>
@@ -83,6 +94,7 @@
         <popularSongs>Hold Back The River, Let It Go, Wild Love</popularSongs>
         <website>https://www.jamesbay.com</website>
         <image>JamesBay.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/40EB7ABUO6MoWMUwPKptJ7?si=d46b5a579f504fd7</songUrl>
     </artist>
     <artist>
         <name>Calum Scott</name>
@@ -90,6 +102,7 @@
         <popularSongs>You Are The Reason, Dancing On My Own, Biblical</popularSongs>
         <website>https://www.calumscott.com</website>
         <image>CalumScott.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/69vToJ9BMbbLlFZo7k7A7B?si=b740c4a1f7a749ae</songUrl>
     </artist>
     <artist>
         <name>Miley Cyrus</name>
@@ -97,6 +110,7 @@
         <popularSongs>Flowers, Wrecking Ball, Malibu</popularSongs>
         <website>https://www.mileycyrus.com</website>
         <image>MileyCyrus.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/1daDRI9ahBonbWD8YcxOIB?si=MnjACuQ1TFS8--UfZEDx3Q</songUrl>
     </artist>
     <artist>
         <name>James Blunt</name>
@@ -104,6 +118,7 @@
         <popularSongs>You’re Beautiful, Goodbye My Lover, Monsters</popularSongs>
         <website>https://www.jamesblunt.com</website>
         <image>JamesBlunt.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/0vg4WnUWvze6pBOJDTq99k?si=0a80ee564f4149d6</songUrl>
     </artist>
     <artist>
         <name>Hozier</name>
@@ -111,5 +126,7 @@
         <popularSongs>Take Me to Church, Cherry Wine, Work Song</popularSongs>
         <website>https://www.hozier.com</website>
         <image>Hozier.jpg</image>
+        <songUrl>https://open.spotify.com/embed/track/3HMY0r2BAdpasXMY8rseR0?si=1b2af37193194add</songUrl>
+        <songUrl></songUrl>
     </artist>
 </artists>

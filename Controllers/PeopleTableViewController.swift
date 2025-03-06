@@ -1,6 +1,7 @@
 
 
 import UIKit
+import Foundation
 
 class PeopleTableViewController: UITableViewController {
     
@@ -8,13 +9,31 @@ class PeopleTableViewController: UITableViewController {
     var artistsData : TopArtists!
     var filteredArtists: [Artist] = []
     var isSearching = false
+    var showFavoritesOnly = false
 
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    @IBAction func toggleFavorites(_ sender: UIBarButtonItem) {
+        showFavoritesOnly.toggle()
+            
+        if showFavoritesOnly {
+            let favorites = StorageManager.getFavorites()
+            filteredArtists = artistsData.allArtists().filter { favorites.contains($0.name) }
+            sender.title = "Show All"
+        } else {
+            sender.title = "Favorites"
+            filteredArtists = artistsData.allArtists()
+        }
+
+        isSearching = true
+        tableView.reloadData()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        title = "TopArtists"
+        title = "Top Artists"
         
         // init model data
         artistsData = TopArtists(xmlFile: "artists.xml")
@@ -55,6 +74,28 @@ class PeopleTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let artist = isSearching ? filteredArtists[indexPath.row] : artistsData.artist(index: indexPath.row)
+        var favorites = StorageManager.getFavorites()
+
+        let isFavorite = favorites.contains(artist.name)
+        let title = isFavorite ? "Unfavorite" : "♥ Favorite"
+
+        let favoriteAction = UIContextualAction(style: .normal, title: title) { _, _, completionHandler in
+            if isFavorite {
+                favorites.removeAll { $0 == artist.name }
+            } else {
+                favorites.append(artist.name)
+            }
+            StorageManager.saveFavorites(favorites)
+            tableView.reloadData()
+            completionHandler(true)
+        }
+
+        favoriteAction.backgroundColor = isFavorite ? .gray : .systemPurple
+        return UISwipeActionsConfiguration(actions: [favoriteAction])
+    }
 
     
     // MARK: - Navigation
@@ -66,12 +107,12 @@ class PeopleTableViewController: UITableViewController {
             let destinationController = segue.destination as! ArtistViewController
             
             // get the indexPath data to push
-            let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
-            let personData = artistsData.artist(index: indexPath!.row)
-        
-            
-            // Pass the selected object to the new view controller.
-            destinationController.personData = personData
+            if let indexPath = tableView.indexPath(for: sender as! UITableViewCell) {
+                let selectedArtist = isSearching ? filteredArtists[indexPath.row] : artistsData.artist(index: indexPath.row)
+
+                // Pass the selected artist object to the next screen
+                destinationController.personData = selectedArtist
+            }
         }
     }
     
