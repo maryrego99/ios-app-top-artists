@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ArtistViewController: UIViewController {
+class ArtistViewController: UIViewController, WKNavigationDelegate {
     
     //MARK: - Outlets
     
@@ -16,6 +16,7 @@ class ArtistViewController: UIViewController {
     @IBOutlet weak var artistImageContainerView: UIView!
     @IBOutlet weak var personLabel: UILabel!
     @IBOutlet weak var songWebView: WKWebView!
+    @IBOutlet weak var songActivityIndicator: UIActivityIndicatorView!
     
     @IBAction func moreInfoAction(_ sender: Any) {
     }
@@ -28,6 +29,7 @@ class ArtistViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        songWebView.navigationDelegate = self
 //        title = "Artist"
         
         // populate outlets with model data
@@ -54,6 +56,15 @@ class ArtistViewController: UIViewController {
             
         songWebView.load(webURLRequest)
         
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        songActivityIndicator.startAnimating()
+    }
+
+    // Stop loading animation 
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        songActivityIndicator.stopAnimating()
     }
     
 

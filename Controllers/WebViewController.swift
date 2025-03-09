@@ -8,10 +8,12 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKNavigationDelegate {
     //MARK: - Outlets
     
     @IBOutlet weak var personWebView: WKWebView!
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // model data
     var urlData : String!
@@ -19,6 +21,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        personWebView.navigationDelegate = self
         
 //        title = "web"
 
@@ -28,6 +31,19 @@ class WebViewController: UIViewController {
         let webURLRequest = URLRequest(url: urlData!)
             
         personWebView.load(webURLRequest)
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        activityIndicator.startAnimating()
+    }
+
+    // Stop loading animation when webpage finishes loading
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        webView.evaluateJavaScript("document.readyState") { (complete, error) in
+                if complete as? String == "complete" {
+                    self.activityIndicator.stopAnimating()
+                }
+            }
     }
     
 

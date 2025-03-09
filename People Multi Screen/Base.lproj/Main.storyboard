@@ -189,6 +189,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Y8t-Ss-Nq8">
+                                <rect key="frame" x="186" y="548" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HAN-d5-t4m"/>
                         <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -198,6 +202,7 @@
                         <outlet property="artistImageContainerView" destination="rHP-EA-fdT" id="cu1-ok-WXy"/>
                         <outlet property="personImageView" destination="5SA-DP-HWS" id="jzG-Ya-Ane"/>
                         <outlet property="personLabel" destination="Ohq-BN-UV8" id="fMN-1L-mAO"/>
+                        <outlet property="songActivityIndicator" destination="Y8t-Ss-Nq8" id="2Ty-aM-WGg"/>
                         <outlet property="songWebView" destination="u0w-vU-DIo" id="MPd-tU-U2a"/>
                     </connections>
                 </viewController>
@@ -413,12 +418,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="I1c-Yk-C63">
+                                <rect key="frame" x="142" y="434" width="108" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="14O-ur-C1w"/>
                         <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jIo-Of-2KU"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="I1c-Yk-C63" id="P26-SM-9Ep"/>
                         <outlet property="personWebView" destination="gNE-Lw-1If" id="sqN-Zh-j24"/>
                     </connections>
                 </viewController>
