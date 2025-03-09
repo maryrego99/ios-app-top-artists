@@ -12,7 +12,7 @@
 		ACC5BFC92D77549A0066F72C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5BFC82D7753300066F72C /* StorageManager.swift */; };
 		D268FEBC2D6C894A00C23F94 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */; };
 		D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAD2D6C894A00C23F94 /* TopArtists.swift */; };
-		D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */; };
+		D268FEBE2D6C894A00C23F94 /* ArtistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAE2D6C894A00C23F94 /* ArtistTableViewController.swift */; };
 		D268FEBF2D6C894A00C23F94 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEAF2D6C894A00C23F94 /* Artist.swift */; };
 		D268FEC02D6C894A00C23F94 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */; };
 		D268FEC22D6C894A00C23F94 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268FEB32D6C894A00C23F94 /* WebViewController.swift */; };
@@ -23,10 +23,10 @@
 		ACBFF6FC2D73C0F800DC0F9B /* artists.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = artists.xml; sourceTree = "<group>"; };
 		ACC5BFC52D7634D60066F72C /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		ACC5BFC82D7753300066F72C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People Multi Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D201AFEC2D5B5CF0000FFA38 /* ArtistVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtistVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D268FEAD2D6C894A00C23F94 /* TopArtists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopArtists.swift; sourceTree = "<group>"; };
-		D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		D268FEAE2D6C894A00C23F94 /* ArtistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTableViewController.swift; sourceTree = "<group>"; };
 		D268FEAF2D6C894A00C23F94 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		D268FEB32D6C894A00C23F94 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -34,12 +34,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "People Multi Screen" target */ = {
+		ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "ArtistVault" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */;
+			target = D201AFEB2D5B5CF0000FFA38 /* ArtistVault */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -47,7 +47,7 @@
 		D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "People Multi Screen" target */,
+				ACBFF7452D74C4F400DC0F9B /* Exceptions for "People Multi Screen" folder in "ArtistVault" target */,
 			);
 			path = "People Multi Screen";
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 		D201AFED2D5B5CF0000FFA38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */,
+				D201AFEC2D5B5CF0000FFA38 /* ArtistVault.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D268FEA92D6C894A00C23F94 /* DetailsViewController.swift */,
-				D268FEAE2D6C894A00C23F94 /* PeopleTableViewController.swift */,
+				D268FEAE2D6C894A00C23F94 /* ArtistTableViewController.swift */,
 				ACC5BFC52D7634D60066F72C /* ArtistTableViewCell.swift */,
 				D268FEB02D6C894A00C23F94 /* ArtistViewController.swift */,
 				D268FEB32D6C894A00C23F94 /* WebViewController.swift */,
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */ = {
+		D201AFEB2D5B5CF0000FFA38 /* ArtistVault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "People Multi Screen" */;
+			buildConfigurationList = D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "ArtistVault" */;
 			buildPhases = (
 				D201AFE82D5B5CF0000FFA38 /* Sources */,
 				D201AFE92D5B5CF0000FFA38 /* Frameworks */,
@@ -133,11 +133,11 @@
 			fileSystemSynchronizedGroups = (
 				D201AFEE2D5B5CF0000FFA38 /* People Multi Screen */,
 			);
-			name = "People Multi Screen";
+			name = ArtistVault;
 			packageProductDependencies = (
 			);
 			productName = "People Multi Screen";
-			productReference = D201AFEC2D5B5CF0000FFA38 /* People Multi Screen.app */;
+			productReference = D201AFEC2D5B5CF0000FFA38 /* ArtistVault.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "People Multi Screen" */;
+			buildConfigurationList = D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "ArtistVault" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D201AFEB2D5B5CF0000FFA38 /* People Multi Screen */,
+				D201AFEB2D5B5CF0000FFA38 /* ArtistVault */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +194,7 @@
 				D268FEBD2D6C894A00C23F94 /* TopArtists.swift in Sources */,
 				ACC5BFC92D77549A0066F72C /* StorageManager.swift in Sources */,
 				D268FECC2D6C8C4200C23F94 /* XMLArtistsParsing.swift in Sources */,
-				D268FEBE2D6C894A00C23F94 /* PeopleTableViewController.swift in Sources */,
+				D268FEBE2D6C894A00C23F94 /* ArtistTableViewController.swift in Sources */,
 				D268FEBF2D6C894A00C23F94 /* Artist.swift in Sources */,
 				ACC5BFC62D7634D60066F72C /* ArtistTableViewCell.swift in Sources */,
 				D268FEC02D6C894A00C23F94 /* ArtistViewController.swift in Sources */,
@@ -381,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "People Multi Screen" */ = {
+		D201AFE72D5B5CF0000FFA38 /* Build configuration list for PBXProject "ArtistVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D201B0022D5B5CF1000FFA38 /* Debug */,
@@ -390,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "People Multi Screen" */ = {
+		D201AFFF2D5B5CF1000FFA38 /* Build configuration list for PBXNativeTarget "ArtistVault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D201B0002D5B5CF1000FFA38 /* Debug */,

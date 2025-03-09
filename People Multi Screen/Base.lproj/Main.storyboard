@@ -10,7 +10,7 @@
         <!--People-->
         <scene sceneID="Ch1-pY-Gl4">
             <objects>
-                <tableViewController title="People " id="zfw-RL-ytx" userLabel="People" customClass="PeopleTableViewController" customModule="People_Multi_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="People " id="zfw-RL-ytx" userLabel="People" customClass="ArtistTableViewController" customModule="ArtistVault" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="C6S-Gn-aen">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="103" id="0rS-wY-zGA" customClass="ArtistTableViewCell" customModule="People_Multi_Screen" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="103" id="0rS-wY-zGA" customClass="ArtistTableViewCell" customModule="ArtistVault" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="106" width="393" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0rS-wY-zGA" id="Cdf-wV-wsw">
@@ -100,7 +100,7 @@
         <!--Person-->
         <scene sceneID="s2d-Ix-7v5">
             <objects>
-                <viewController title="Person" id="gOA-ZK-H6a" customClass="ArtistViewController" customModule="People_Multi_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Person" id="gOA-ZK-H6a" customClass="ArtistViewController" customModule="ArtistVault" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FBb-u4-feP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--Details-->
         <scene sceneID="Gv3-Nd-011">
             <objects>
-                <viewController title="Details" id="uiO-wN-lhA" customClass="DetailsViewController" customModule="People_Multi_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Details" id="uiO-wN-lhA" customClass="DetailsViewController" customModule="ArtistVault" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oth-i9-QDs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -397,7 +397,7 @@
         <!--Web-->
         <scene sceneID="IHz-1q-cnG">
             <objects>
-                <viewController title="Web" id="YpI-Vl-Hk1" customClass="WebViewController" customModule="People_Multi_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Web" id="YpI-Vl-Hk1" customClass="WebViewController" customModule="ArtistVault" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ax-ue-lno">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

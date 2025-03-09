@@ -3,7 +3,7 @@
 import UIKit
 import Foundation
 
-class PeopleTableViewController: UITableViewController {
+class ArtistTableViewController: UITableViewController {
     
     // model data
     var artistsData : TopArtists!
@@ -120,7 +120,7 @@ class PeopleTableViewController: UITableViewController {
 
 }
 
-extension PeopleTableViewController: UISearchBarDelegate {
+extension ArtistTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             isSearching = false
